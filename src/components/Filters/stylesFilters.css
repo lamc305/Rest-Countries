@@ -1,0 +1,55 @@
+.form {
+  width: 80vw;
+  margin: 35px auto;
+  display: flex;
+  max-width: 1280px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input__container {
+  background-color: hsl(209, 23%, 22%);
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+}
+
+.input__container input {
+  background-color: hsl(209, 23%, 22%);
+  padding: 15px 20px 15px 0px;
+  outline: none;
+  border: none;
+  color: white;
+  width: 100%;
+}
+
+.input__container input::placeholder {
+  color: hsla(360, 100%, 100%, 0.52);
+}
+
+
+ion-icon {
+  color: white;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+.select select {
+  background-color: hsl(209, 23%, 22%);
+  outline: none;
+  border: none;
+  padding: 20px;
+  color: white;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.select select option {
+  border-radius: 6px;
+}
