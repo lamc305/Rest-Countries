@@ -12,8 +12,7 @@ function CountrySingle() {
   useEffect(() => {
     { name && getFullCountry(name).then(setCountry) }
     { code && getCountryByCode(code).then(setCountry) }
-  }, [country])
-
+  }, [code, name])
 
   return (
     <>
