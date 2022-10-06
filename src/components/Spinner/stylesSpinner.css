@@ -46,6 +46,14 @@
   animation: rotation 1.5s linear infinite;
 }
 
+.loaderLight {
+  border-color: hsl(200, 15%, 8%) hsl(200, 15%, 8%) transparent transparent;
+}
+
+.loaderLight::before {
+  border-color: hsl(200, 15%, 8%) hsl(200, 15%, 8%) transparent transparent;
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);

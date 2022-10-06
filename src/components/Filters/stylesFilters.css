@@ -83,3 +83,25 @@
   background-color: hsl(0, 0%, 100%);
   color: hsl(200, 15%, 8%);
 }
+
+@media screen and (max-width: 700px) {
+  .form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px
+  }
+
+  .input__container {
+    width: 85vw;
+    max-width: none;
+  }
+
+  .select {
+    width: 192px;
+    height: 48px;
+  }
+
+  .select select {
+    width: 160px;
+  }
+}
