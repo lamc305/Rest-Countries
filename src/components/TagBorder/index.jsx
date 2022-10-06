@@ -1,10 +1,14 @@
+import { Link } from 'react-router-dom'
 import './stylesTag.css'
 
-function TagBorde({borde}) {
+function TagBorde({ borde }) {
   return (
-    <div className='tagBorder'>
-      {borde}
-    </div>
+
+    <Link to={`/countryByCode/${borde}`}>
+      <div className='tagBorder'>
+        {borde}
+      </div>
+    </Link>
   )
 }
 
