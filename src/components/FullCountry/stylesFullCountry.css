@@ -16,9 +16,6 @@
 }
 
 .fullCountry__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: hsl(209, 23%, 22%);
   color: white;
   outline: none;
@@ -28,6 +25,13 @@
   cursor: pointer;
   box-shadow: 0 0 5px black
 }
+
+.fullCountry__buttonLight {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+  box-shadow: 0 0 3px hsl(0, 0%, 52%);
+}
+
 
 .fullCountry__button:active {
   transform: translateY(2px);
@@ -47,6 +51,10 @@
 .fullCountry__text {
   color: #fff;
   padding: 40px;
+}
+
+.fullCountry__textLight {
+  color: hsl(200, 15%, 8%);
 }
 
 .fullCountry__text h2 {
@@ -74,6 +82,14 @@
 .containerTags {
   margin-top: 80px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 20px;
+}
 
+.fullCountry__textRight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

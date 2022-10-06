@@ -1,25 +1,18 @@
-import { useEffect, useState } from "react"
-import { getCountries } from "../../services/getCountries"
+import { useContext } from "react"
+import { FilterContext } from "../../context/FilterContext"
 import Country from "../Country"
 import Spinner from "../Spinner"
 import './stylesList.css'
 
 function ListOfCountries() {
 
-  const [countries, setCountries] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
-  useEffect(() => {
-    getCountries().then(res => {
-      setIsLoading(false)
-      setCountries(res)
-    })
-  }, [])
 
+  const { isLoading, matches } = useContext(FilterContext)
 
   if (isLoading) return <Spinner />
   return (
     <section className='listOfCountries'>
-      {countries.map(({ name, flags, population, capital, region }) => (
+      {matches.map(({ name, flags, population, capital, region }) => (
         <Country
           key={flags.svg}
           name={name}
