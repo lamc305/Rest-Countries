@@ -1,0 +1,10 @@
+.tagBorder {
+  height: 31px;
+  width: 77px;
+  border-radius: 6px;
+  /* box-shadow: 0 0 5px black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(209, 23%, 22%);
+}

@@ -1,17 +1,22 @@
 import { useEffect, useState } from "react"
 import { getCountries } from "../../services/getCountries"
 import Country from "../Country"
+import Spinner from "../Spinner"
 import './stylesList.css'
 
 function ListOfCountries() {
 
   const [countries, setCountries] = useState([])
-
+  const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
-    getCountries().then(setCountries)
+    getCountries().then(res => {
+      setIsLoading(false)
+      setCountries(res)
+    })
   }, [])
-  console.log(countries)
 
+
+  if (isLoading) return <Spinner />
   return (
     <section className='listOfCountries'>
       {countries.map(({ name, flags, population, capital, region }) => (

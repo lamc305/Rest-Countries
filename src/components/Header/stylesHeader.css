@@ -23,7 +23,11 @@
   font-weight: 800;
 }
 
-.header__container p:last-child {
+.themeMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
-  color: hsl(0, 0%, 100%);
+  color: white;
+  gap: 10px;
 }
