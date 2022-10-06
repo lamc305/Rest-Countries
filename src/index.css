@@ -17,3 +17,7 @@ body {
   min-width: 100%;
   background-color: hsl(207, 26%, 17%);
 }
+
+.Applight {
+  background-color: hsl(0, 0%, 98%);
+}

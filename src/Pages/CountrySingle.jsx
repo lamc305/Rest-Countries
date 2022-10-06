@@ -2,17 +2,18 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import FullCountry from "../components/FullCountry"
 import Spinner from "../components/Spinner"
+import { getCountryByCode } from "../services/getCountryByCode"
 import { getFullCountry } from "../services/getFullCountry"
 
 function CountrySingle() {
-  const { name } = useParams()
+  const { name, code } = useParams()
   const [country, setCountry] = useState(null)
 
   useEffect(() => {
-    getFullCountry(name).then(setCountry)
-  }, [])
+    { name && getFullCountry(name).then(setCountry) }
+    { code && getCountryByCode(code).then(setCountry) }
+  }, [country])
 
-  console.log(country)
 
   return (
     <>
