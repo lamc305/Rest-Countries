@@ -5,6 +5,7 @@
   color: #fff;
   overflow: hidden;
   border-radius: 6px;
+  transition: transform 0.5s;
 }
 
 .countryLight {
@@ -39,4 +40,8 @@ span {
 
 a {
   text-decoration: none;
+}
+
+.country:hover {
+  transform: scale(1.1);
 }
