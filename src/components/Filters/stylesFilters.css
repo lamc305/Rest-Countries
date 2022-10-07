@@ -59,8 +59,9 @@
 }
 
 .select {
+  background-color: hsl(209, 23%, 22%);
   overflow: hidden;
-  width: 153px;
+  width: 165px;
   border-radius: 6px;
   height: 48px;
 }
@@ -76,10 +77,11 @@
 
 .selectLight {
   box-shadow: 0 0 3px hsl(0, 0%, 52%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
 }
 
 .selectLight select {
-
   background-color: hsl(0, 0%, 100%);
   color: hsl(200, 15%, 8%);
 }
@@ -102,6 +104,7 @@
   }
 
   .select select {
-    width: 160px;
+    width: 178px;
   }
+
 }
