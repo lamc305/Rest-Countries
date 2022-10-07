@@ -21,7 +21,7 @@ function FullCountry({ flags, name, population, region, subregion, capital, tld,
         <button onClick={handleClick} className={`${darkMode ? 'fullCountry__button' : 'fullCountry__button fullCountry__buttonLight'}`}> <ion-icon name="arrow-back-outline"></ion-icon> Back </button>
       </div>
       <div className='fullCountry__container'>
-        <div>
+        <div className='fullCountry__imageContainer'>
           <img className='fullCountry__image' src={flags?.svg} loading='lazy' alt={`Flags of ${name?.common}`} />
         </div>
         <div className={`${darkMode ? 'fullCountry__text' : 'fullCountry__text fullCountry__textLight'}`}>
