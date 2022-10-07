@@ -4,6 +4,9 @@
   background-color: hsl(209, 23%, 22%);
   box-shadow: 0 0 5px black;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   align-items: center;
 }
 
