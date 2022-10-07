@@ -9,3 +9,14 @@
   place-content: center;
   padding-bottom: 150px;
 }
+
+.withoutMatches {
+  margin: 0 auto;
+  color: hsl(0, 0%, 100%);
+  padding-top: 150px;
+  font-size: 1.8rem;
+}
+
+.withoutMatchesLight {
+  color: hsl(200, 15%, 8%);
+}

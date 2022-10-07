@@ -12,7 +12,7 @@ function FilterText() {
   }
 
   const handleChange = (value) => {
-    onChange(value ? countries => countries.name.common.includes(value[0].toUpperCase() + value.substring(1)) : null)
+    onChange(value ? countries => countries.name.common.includes(value.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())) : null)
   }
 
   return (
