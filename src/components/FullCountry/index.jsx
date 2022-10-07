@@ -39,7 +39,7 @@ function FullCountry({ flags, name, population, region, subregion, capital, tld,
             <div className='fullCountry__textRight'>
               <h3>Top Level Domain: <span>{tld}</span></h3>
               <h3>Curriencies:
-                <span>{Object.values(currencies).map(res => <span key={res.name}>{res.name} </span>)}</span>
+                <span> {Object.values(currencies).map(res => <span key={res.name}>{res.name} </span>)}</span>
 
               </h3>
               <h3>Languages: <span>{Object.values(languages).map(res => <span key={res}>{res} </span>)}</span></h3>

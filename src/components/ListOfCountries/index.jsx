@@ -9,10 +9,21 @@ function ListOfCountries() {
 
   const { isLoading, matches } = useContext(FilterContext)
 
+  const compare_name = (a, b) => {
+    if (a.name.common.toLowerCase() < b.name.common.toLowerCase()) {
+      return -1;
+    }
+    if (a.name.common.toLowerCase() > b.name.common.toLowerCase()) {
+      return 1;
+    }
+    return 0;
+  }
+
+
   if (isLoading) return <Spinner />
   return (
     <section className='listOfCountries'>
-      {matches.map(({ name, flags, population, capital, region }) => (
+      {matches.sort(compare_name).map(({ name, flags, population, capital, region }) => (
         <Country
           key={flags.svg}
           name={name}

@@ -5,16 +5,20 @@
   margin: 85px auto 0;
   gap: 40px;
   padding-bottom: 150px;
+  max-width: 1440px;
 }
 
-.fullCountry__container>div {
-  min-width: calc(85vw/2);
+.fullCountry__imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fullCountry__image {
   width: 100%;
-  object-fit: contain;
-  max-height: 400px;
+  max-width: 570px;
+  object-fit: cover;
+  max-height: 430px;
   box-shadow: 0 0 3px hsl(0, 0%, 52%);
 }
 
@@ -49,6 +53,7 @@
 .fullCountry__buttonContainer {
   width: 85vw;
   margin: 40px auto;
+  max-width: 1440px;
 }
 
 .fullCountry__text {
