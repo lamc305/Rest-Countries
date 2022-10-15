@@ -15,16 +15,18 @@
 }
 
 .header__container {
-  width: 90vw;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  position: relative;
 }
 
-.header__container p:first-child {
+.header__container a {
+  width: 80vw;
+  max-width: 1280px;
+  text-align: center;
   font-size: 1.8rem;
   color: hsl(0, 0%, 100%);
   font-weight: 800;
@@ -35,7 +37,10 @@
 }
 
 .themeMode {
+  position: absolute;
   display: flex;
+  right: 20px;
+  flex: 0.2;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
@@ -44,6 +49,25 @@
   cursor: pointer;
 }
 
+.themeMode p {
+  white-space: nowrap;
+}
+
 .themeModeLight {
   color: hsl(200, 15%, 8%);
+}
+
+@media screen and (max-width: 675px) {
+  .header__container {
+    position: static;
+    width: 85vw;
+  }
+
+  .header__container a {
+    width: auto;
+  }
+
+  .themeMode {
+    position: static;
+  }
 }
