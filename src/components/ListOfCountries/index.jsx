@@ -21,7 +21,7 @@ function ListOfCountries() {
     return 0;
   }
 
-
+  console.log(matches)
   if (isLoading) return <Spinner />
   return (
     <section className='listOfCountries'>

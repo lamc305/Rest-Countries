@@ -15,7 +15,7 @@ function Country({ flags, name, population, region, capital }) {
           <h2 className='country__name'>{name.common}</h2>
           <h3>Population: <span>{population.toLocaleString()}</span></h3>
           <h3>Region: <span>{region}</span></h3>
-          <h3>Capital: <span>{capital}</span></h3>
+          {capital && <h3>Capital: <span>{capital}</span></h3>}
         </div>
       </div>
     </Link >
