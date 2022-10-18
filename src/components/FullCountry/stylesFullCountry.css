@@ -142,4 +142,9 @@
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
   }
+
+  .containerTags {
+    flex-direction: column;
+    margin: 0;
+  }
 }

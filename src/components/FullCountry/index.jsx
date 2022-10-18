@@ -45,12 +45,10 @@ function FullCountry({ flags, name, population, region, subregion, capital, tld,
           </div>
           {borders &&
             <div className='containerTags'>
-              <>
-                <h3>Border Countries: </h3>
-                <div className='container__bordes'>
-                  {borders?.map(res => <TagBorde key={res} borde={res} />)}
-                </div>
-              </>
+              <h3>Border Countries: </h3>
+              <div className='container__bordes'>
+                {borders?.map(res => <TagBorde key={res} borde={res} />)}
+              </div>
             </div>
           }
         </div>
