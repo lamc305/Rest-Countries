@@ -17,22 +17,22 @@ Users should be able to:
 
 ### Screenshot
 
-![Home (theme dark)](./photos/Home__dark.png)
+![Home (theme dark)](./photos/Home__dark.webp)
 
 
-![Home (theme light)](./photos/Home__light.png)
+![Home (theme light)](./photos/Home__light.webp)
 
 
-![Home (responsive with theme dark)](./photos/Home__responsiveDark.png)
+![Home (responsive with theme dark)](./photos/Home__responsiveDark.webp)
 
 
-![Country (theme dark)](./photos/Country__dark.png)
+![Country (theme dark)](./photos/Country__dark.webp)
 
 
-![Country (theme light)](./photos/Country__light.png)
+![Country (theme light)](./photos/Country__light.webp)
 
 
-![Country (responsive with theme dark)](./photos/Country__responsiveDark.png)
+![Country (responsive with theme dark)](./photos/Country__responsiveDark.webp)
 
 ### Links
 
