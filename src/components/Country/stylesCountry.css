@@ -1,6 +1,6 @@
 .country {
   width: 250px;
-  height: 290px;
+  height: 270px;
   background-color: hsl(209, 23%, 22%);
   color: #fff;
   overflow: hidden;
@@ -16,13 +16,14 @@
 
 .country__image {
   width: 100%;
-  height: 160px;
+  height: 135px;
   object-fit: cover;
   box-shadow: 0 0 2px hsl(0, 0%, 52%);
 }
 
 .country__containerText {
   padding: 20px;
+  height: 135px;
 }
 
 .country__name {
